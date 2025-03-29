@@ -1,0 +1,19 @@
+## IDF Component Manager Manifest File
+dependencies:
+  espressif/led_strip:
+    version: '^2'
+    override_path: '../../../'
+  espressif/esp_codec_dev:  # 音频编解码设备支持
+    version: "^3.0"
+  espressif/esp-adf-libs:   # 音频开发框架库
+    version: "^1.0"
+  espressif/i2c_bus:        # I2C总线驱动
+    version: "^1.0"
+  espressif/esp_http_server: # Web服务器
+    version: "^2.1"
+  espressif/esp_wifi:       # WiFi支持
+    version: "^2.1"
+  espressif/nvs_flash:      # 非易失性存储
+    version: "^1.4"
+  espressif/nimble:  # 添加NimBLE蓝牙协议栈
+    version: "^1.4"

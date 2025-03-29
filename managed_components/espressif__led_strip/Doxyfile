@@ -1,0 +1,37 @@
+# 输入目录设置（保持不变）
+INPUT = \
+    include/ \
+    interface/
+
+# 输出目录配置（保持不变） 
+OUTPUT_DIRECTORY = doxygen
+
+# 警告设置（增强检查）
+WARN_IF_UNDOC_ENUM_VAL = YES
+WARN_AS_ERROR = YES
+WARN_NO_PARAMDOC = YES
+WARN_IF_DOC_ERROR = YES
+
+# 预处理设置（优化C语言支持）
+FULL_PATH_NAMES = YES
+ENABLE_PREPROCESSING = YES
+MACRO_EXPANSION = YES 
+PREDEFINED = $(ENV_DOXYGEN_DEFINES) \
+             __attribute__(x)= \
+             __nonnull__(x)=
+
+# 输出格式配置（新增HTML生成）
+# 确认以下关键配置：
+GENERATE_HTML = YES       # 已启用HTML文档
+GENERATE_XML = YES        # 保持XML输出
+CALL_GRAPH = YES          # 函数调用图已启用
+HTML_OUTPUT = html
+GENERATE_TREEVIEW = YES
+SEARCHENGINE = YES
+
+# 其他优化设置
+EXTRACT_ALL = YES
+EXTRACT_PRIVATE = NO
+EXTRACT_STATIC = YES
+CALL_GRAPH = YES
+CALLER_GRAPH = YES
